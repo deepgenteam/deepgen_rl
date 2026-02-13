@@ -1,0 +1,25 @@
+datasets:
+  - name: unigenbench_en
+    path: unigenbench/test_prompts_en.csv
+    cfg_scale: 4.0
+    num_inference_steps: 50
+    duplicates: 4
+    scoring: unigenbench/en
+  # - name: unigenbench_en_long
+  #   path: unigenbench/test_prompts_en_long.csv
+  #   cfg_scale: 4.0
+  #   num_inference_steps: 50
+  #   duplicates: 4
+  #   scoring: unigenbench/en
+  # - name: unigenbench_zh
+  #   path: unigenbench/test_prompts_zh.csv
+  #   cfg_scale: 4.0
+  #   num_inference_steps: 50
+  #   duplicates: 4
+  #   scoring: unigenbench/zh
+  # - name: unigenbench_zh_long
+  #   path: unigenbench/test_prompts_zh_long.csv
+  #   cfg_scale: 4.0
+  #   num_inference_steps: 50
+  #   duplicates: 4
+  #   scoring: unigenbench/zh

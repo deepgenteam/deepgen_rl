@@ -1,0 +1,54 @@
+# Sampling mode configuration:
+#   - sample_proportional (default): weight is a multiplier relative to uniform sampling by sample count
+#     e.g., weight=2.0 means 2x probability compared to uniform sampling
+#     A small dataset will naturally have lower probability, weight adjusts it proportionally
+#   - weight_only: sampling probability is purely based on weight, ignoring dataset size
+#     e.g., all datasets with weight=1.0 have equal probability regardless of size
+sampling_mode: sample_proportional
+
+datasets:
+  - name: unigenbench_train_data_ocr
+    path: unigenbench_train_data_ocr.txt
+    sample_weight: 3.0
+    rewards:
+      - unifiedreward_think: 0.2
+      - clip_sim: 0.1
+      - ocr: 0.7
+  - name: qwenimage_textrender
+    path: qwenimage_textrender.txt
+    sample_weight: 3.0
+    rewards:
+      - unifiedreward_think: 0.2
+      - clip_sim: 0.1
+      - ocr: 0.7
+  - name: text_render_less
+    path: text_render_less.txt
+    sample_weight: 3.0
+    rewards:
+      - unifiedreward_think: 0.2
+      - clip_sim: 0.1
+      - ocr: 0.7
+  - name: unigenbench_train_data_general
+    path: unigenbench_train_data_general.txt
+    sample_weight: 1.0
+    rewards:
+      - unifiedreward_think: 0.7
+      - clip_sim: 0.3
+  - name: blip3o_60k
+    path: blip3o_60k.txt
+    sample_weight: 1.0
+    rewards:
+      - unifiedreward_think: 0.7
+      - clip_sim: 0.3
+  - name: share_4o_img
+    path: share_4o_img.txt
+    sample_weight: 1.0
+    rewards:
+      - unifiedreward_think: 0.7
+      - clip_sim: 0.3
+  - name: corebench
+    path: corebench.txt
+    sample_weight: 1.0
+    rewards:
+      - unifiedreward_think: 0.7
+      - clip_sim: 0.3
