@@ -105,14 +105,11 @@ DeepGen 1.0 uses a three-stage progressive training pipeline:
 ## Citation
 
 ```bibtex
-@misc{wang2026deepgen10lightweightunified,
-      title={DeepGen 1.0: A Lightweight Unified Multimodal Model for Advancing Image Generation and Editing}, 
-      author={Dianyi Wang and Ruihang Li and Feng Han and Chaofan Ma and Wei Song and Siyuan Wang and Yibin Wang and Yi Xin and Hongjian Liu and Zhixiong Zhang and Shengyuan Ding and Tianhang Wang and Zhenglin Cheng and Tao Lin and Cheng Jin and Kaicheng Yu and Jingjing Chen and Wenjie Wang and Zhongyu Wei and Jiaqi Wang},
-      year={2026},
-      eprint={2602.12205},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2602.12205}, 
+@article{wang2026deepgen10alightweightunified,
+  title   = {DeepGen 1.0: A Lightweight Unified Multimodal Model for Advancing Image Generation and Editing},
+  author  = {Dianyi Wang and Ruihang Li and Feng Han and Chaofan Ma and Wei Song and Siyuan Wang and Yibin Wang and Yi Xin and Hongjian Liu and Zhixiong Zhang and Shengyuan Ding and Tianhang Wang and Zhenglin Cheng and Tao Lin and Cheng Jin and Kaicheng Yu and Jingjing Chen and Wenjie Wang and Zhongyu Wei and Jiaqi Wang},
+  year    = {2026},
+  journal = {arXiv preprint arXiv: 2602.12205}
 }
 ```
 
